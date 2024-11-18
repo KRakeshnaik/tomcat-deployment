@@ -3,4 +3,4 @@
   become: true
   tasks:
     - name: new container
-      shell: docker run -itd --name nginx -p 8085:80 rakeshnaik0908/tomcat:latest
+      shell: docker run -itd --name nginx -p 8085:80 rakeshnaik0908/tomcat-deplyment:latest
