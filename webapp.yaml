@@ -9,4 +9,4 @@
     - name: remove docker image
       shell: docker image rm rakeshnaik0908/tomcat-deplyment:latest
     - name: new container
-      shell: docker run -itd --name nginx -p 8085:80 rakeshnaik0908/tomcat-deplyment:latest
+      shell: docker run -itd --name tomcat-deplyment -p 8085:8080 rakeshnaik0908/tomcat-deplyment:latest
