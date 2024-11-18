@@ -3,4 +3,4 @@
   become: true
   tasks:
     - name: new container
-      shell: docker run -itd --name tomcat-deplyment -p 8085:8080 rakeshnaik0908/tomcat-deplyment:latest
+      shell: docker run -itd --name webserver -p 8085:8080 rakeshnaik0908/webserver:latest
