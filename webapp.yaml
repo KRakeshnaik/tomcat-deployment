@@ -2,5 +2,11 @@
 - hosts: all
   become: true
   tasks:
+    - name: stop container
+      shell: docker container stop webserver
+    - name: remove container
+      shell: docker container rm webserver
+    - name: remove docker image
+      shell: docker image rm rakeshnaik0908/webserver
     - name: new container
       shell: docker run -itd --name webserver -p 8085:8080 rakeshnaik0908/webserver:latest
