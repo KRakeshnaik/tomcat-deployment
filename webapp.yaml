@@ -3,4 +3,4 @@
   become: true
   tasks: 
     - name: new container
-      shell: docker run -itd --name webserverpipeline -p 8085:8080 rakeshnaik0908/webserverpipeline:latest
+      shell: docker run -itd --name webserverpipeline -p 8085:8080 rakeshnaik0908/project:latest
