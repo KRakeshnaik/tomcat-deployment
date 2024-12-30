@@ -1,12 +1,6 @@
 ---
 - hosts: all
   become: true
-  tasks:
-    - name: stop container
-      shell: docker container stop webserverpipeline 
-    - name: remove container
-      shell: docker container rm webserverpipeline 
-    - name: remove docker image
-      shell: docker image rm rakeshnaik0908/webserverpipeline 
+  tasks: 
     - name: new container
       shell: docker run -itd --name webserverpipeline -p 8085:8080 rakeshnaik0908/webserverpipeline:latest
